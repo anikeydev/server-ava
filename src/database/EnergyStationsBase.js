@@ -9,7 +9,7 @@ const EnergyStationsBase = {
             result.push({
                 name: item.properties.attributes.Name,
                 address: item.properties.attributes.Address,
-                coordinates: item.geometry.coordinates
+                coordinates: item.geometry.coordinates.reverse()
             })   
         })
         return result
